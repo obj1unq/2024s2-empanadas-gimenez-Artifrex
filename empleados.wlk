@@ -2,29 +2,30 @@ object galvan {
     var sueldo = 15000
     var saldo = 0
 
-    method sueldo(_sueldo) {
-        sueldo = _sueldo
+    method dinero() {
+        return if (saldo >= 0) saldo else 0
     }
 
-    method sueldo() {
-        return sueldo
+    method deuda() {
+        return if (saldo < 0) saldo else 0
+    }
+    
+    method gastar(cuantoGasta) {
+        saldo = saldo - cuantoGasta
     }
 
     method cobrarSueldo() {
         saldo = saldo + sueldo
     }
 
-    method gastar(cuantoGasta) {
-        saldo = saldo - cuantoGasta
-
-    method deuda() {
-        return if (saldo < 0) saldo else 0
+    method sueldo(_sueldo) {
+        sueldo = _sueldo
     }
 
-    method dinero() {
-        return if (saldo >= 0) saldo else 0
+    method sueldo() {
+      return sueldo
     }
-
+   
 }
 
 object baigorria {
