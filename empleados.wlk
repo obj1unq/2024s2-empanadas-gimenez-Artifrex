@@ -3,7 +3,7 @@ object galvan {
     var saldo = 0
 
     method dinero() {
-        return if (saldo >= 0) saldo else 0//lo mismo aca
+        return if (saldo >= 0) saldo else 0 //lo mismo aca
     }
 
     method deuda() {
