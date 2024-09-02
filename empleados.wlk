@@ -3,11 +3,12 @@ object galvan {
     var saldo = 0
 
     method dinero() {
-        return if (saldo >= 0) saldo else 0
+        return if (saldo >= 0) saldo else 0//lo mismo aca
     }
 
     method deuda() {
-        return if (saldo < 0) saldo else 0
+        return if (saldo < 0) saldo else 0 //preguntar porque "else 0" 
+                                           //y que de lo que tiene que dar, osea funcione
     }
     
     method gastar(cuantoGasta) {
